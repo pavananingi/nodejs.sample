@@ -1,1 +1,3 @@
-# nodejs.sample
+step1: update 
+
+step2: install docker
