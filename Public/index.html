@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapna Solutions</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #282852);
+            color: #fff;
+            overflow-x: hidden;
+        }
 
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #FFD700;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            transition: all 0.5s ease;
+        }
+
+        #home {
+            background: linear-gradient(135deg, #FF7F50, #FF4500);
+            animation: fadeIn 2s ease;
+        }
+
+        #about {
+            background: linear-gradient(135deg, #1E90FF, #00BFFF);
+        }
+
+        #services {
+            background: linear-gradient(135deg, #32CD32, #228B22);
+        }
+
+        #contact {
+            background: linear-gradient(135deg, #6A5ACD, #483D8B);
+        }
+
+        section h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: slideIn 1.5s ease;
+        }
+
+        section p {
+            font-size: 1.2em;
+            max-width: 700px;
+            text-align: center;
+            line-height: 1.8;
+            animation: fadeUp 1.8s ease;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background: #FFD700;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Swapna Solutions</h1>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Swapna Solutions</h2>
+        <p>Empowering businesses with cutting-edge technologies in AWS, DevOps, Development, Testing, and Database solutions.</p>
+        <a href="#about" class="button">Learn More</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Swapna Solutions Pvt Ltd is dedicated to delivering high-quality IT services and innovative solutions that drive success for our clients.</p>
+        <a href="#services" class="button">Our Services</a>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>From cloud management to application development, we provide comprehensive IT solutions tailored to your needs.</p>
+        <a href="#contact" class="button">Get in Touch</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to transform your business? Reach out to us today and let's make it happen together!</p>
+        <a href="#home" class="button">Back to Top</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Swapna Solutions Pvt Ltd. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
